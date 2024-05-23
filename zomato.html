@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/Favicon.png">
+  <link rel="stylesheet" href="zomato.css">
+  <title>Zomato </title>
+</head>
+
+<body>
+
+  <section id="intro">
+    <nav id="navigation">
+      <div class="col1">
+        <a href="#"><i class="fa fa-thin fa-mobile-retro"></i> Get the App</a>
+      </div>
+      <div class="col2">
+        <a href="#">Investor Relations</a>
+        <a href="#">Add restaurant</a>
+        <a href="#">Log in</a>
+        <a href="#">Sign up</a>
+      </div>
+    </nav>
+
+    <section id="header">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDPp8qrFdo2RGq5KkG5lR3qfasNN6zSCZ8luYHlZo8EA&s" class="zomato-logo">
+      <p class="tagline">Discover the best & drinks in Chennai</p>
+      <p class="tagline">Discover the best & drinks in hydrabad</p>
+      <div class="locate-and-search">
+        <div class="locate">
+          <i class="location-icon fa fa-location-dot"></i>
+          <input type="text" placeholder="Chennai" class="location-search">
+          <input type="text" placeholder="hydrabad" class="locate-and-search">
+          <i class="triangle-icon"></i>
+        </div>
+        <div class="dropdown-panel">
+          <div class="dropdown-panel-row1">
+            <i class="dp-row1-col1 fa fa-location-crosshairs"></i>
+            <div class="dp-row1-col2">
+              <p class="detect-text">Detect current location</p>
+              <p class="gps-text">Using GPS</p>
+            </div>
+          </div>
+          <div class="dropdown-panel-row2">
+            <p></p>
+          </div>
+        </div>
+        <div class="search">
+          <i class="search-icon fa fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search for restaurant, cuisine or a dish" class="search-all">
+        </div>
+      </div>
+    </section>
+  </section>
+  <section id="options">
+    <div class="opt-1">
+      <div class="opt-footer">
+        <p class="opt-title">Order Online</p>
+        <p class="opt-desc">Stay home and order at your doortstep</p>
+      </div>
+    </div>
+
+    <div class="opt-2">
+      <div class="opt-footer dining">
+        <p class="opt-title">Dining</p>
+        <p class="opt-desc">Stay home and order at your doortstep</p>
+      </div>
+    </div>
+
+    <div class="opt-3">
+      <div class="opt-footer club">
+        <p class="opt-title">Nightlife and Clubs</p>
+        <p class="opt-desc">Stay home and order at your doortstep</p>
+      </div>
+    </div>
+  </section>
+  <script>
+    const locationInput = document.querySelector(".location-search");
+    const traingleIconButton = document.querySelector(".triangle-icon");
+    const dropdownPanel = document.querySelector(".dropdown-panel");
+
+    locationInput.addEventListener('click', () => {
+      dropdownPanel.classList.toggle("make-dropdown-visible");
+    });
+
+  </script>
