@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif, Arial;
+}
+
+#intro {
+    background-image: url("assets/images/BackGround.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 26em;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigation {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.col1 a i {
+    padding-right: 5px;
+}
+
+.col1 a,
+.col2 a {
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.col2 a {
+    padding: 0 20px;
+}
+
+.col2 a:first-child {
+    padding-left: 0;
+}
+
+.col2 a:last-child {
+    padding-right: 0;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.zomato-logo {
+    width: 260px;
+    margin-bottom: 30px;
+}
+
+.tagline {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.locate-and-search {
+    background-color: #fff;
+    padding: 10px 12px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.locate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid rgb(202, 201, 201);
+    margin: 3px 0;
+    padding-right: 10px;
+}
+
+.dropdown-panel {
+    position: absolute;
+    width: 320px;
+    height: 22em;
+    max-height: 22em;
+    background-color: #fff;
+    bottom: -22.5em;
+    left: 0;
+    z-index: 1000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 0 1px #000;
+    display: none;
+    overflow-y: auto;
+}
+
+.make-dropdown-visible {
+    display: block;
+}
+
+.dropdown-panel-row1 {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    box-sizing: border-box;
+}
+
+.dropdown-panel-row2 {
+    padding: 10px 15px;
+}
+
+.dp-row1-col1 {
+    font-size: 12px;
+    color: rgb(219, 114, 132);
+    padding: 10px 0;
+}
+
+.location-icon {
+    color: rgb(255, 141, 160);
+}
+
+.dp-row1-col2 {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detect-text {
+    font-size: 15px;
+    color: rgb(219, 114, 132);
+}
+
+.gps-text {
+    color: #000;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.location-search,
+.search-all {
+    border: none;
+    font-size: 13px;
+    font-weight: 100;
+    color: #000;
+    padding: 2px 5px;
+    width: 150px;
+    margin: 0 5px;
+}
+
+.location-search:focus,
+.search-all:focus {
+    outline: none;
+}
+
+.search-all {
+    width: 320px;
+}
+
+.search-all::placeholder {
+    color: rgb(150, 150, 150);
+    font-weight: 100;
+}
+
+.triangle-icon {
+    width: 0;
+    height: 0;
+    border-top: 6px solid #4f4f4f;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    cursor: pointer;
+}
+
+.search {
+    margin: 0 15px;
+}
+
+.search-icon {
+    color: gray;
+}
+
+#options {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 35px 150px 0 150px;
+    box-sizing: border-box;
+}
+
+.opt-1,
+.opt-2,
+.opt-3 {
+    width: 320px;
+    background-image: url("assets/images/Online-Food.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 210px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 1px #000;
+    position: relative;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.opt-2 {
+    background-image: url("assets/images/Dine-Out.png");
+}
+
+.opt-3 {
+    background-image: url("assets/images/Night-Life.png");
+}
+
+.opt-1:hover,
+.opt-2:hover,
+.opt-3:hover {
+    transform: scale(1.05);
+}
+
+.opt-footer {
+    width: 100%;
+    height: auto;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.opt-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.opt-desc {
+    font-size: 14px;
