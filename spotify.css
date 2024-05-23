@@ -1,0 +1,12 @@
+#nav_section
+{
+    height: 300px;
+    width: 100%;
+    border: 4px soild red;
+}
+#navart
+{
+    height: 300px;
+    width: 85%;
+    border: 2px soild orange;
+}
