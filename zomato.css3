@@ -1,0 +1,156 @@
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+    background: #fff;
+  }
+  
+  #intro {
+    background-image: url('assets/images/BackGround.png');
+    background-size: cover;
+    min-height: 420px;
+    position: relative;
+  }
+  
+  #navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 48px;
+  }
+  
+  #navigation .col1 a,
+  #navigation .col2 a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .zomato-logo {
+    width: 300px;
+  }
+  
+  .tagline {
+    font-size: 36px;
+    color: red;
+    margin-bottom: 32px;
+    font-weight: bold;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.17);
+  }
+  
+  .locate-and-search {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 14px rgba(0,0,0,0.10);
+    padding: 9px 12px;
+    gap: 16px;
+    width: 600px;
+    max-width: 90vw;
+    position: relative;
+  }
+  
+  .locate {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #d3d3d3;
+    padding-right: 14px;
+  }
+  
+  .location-icon {
+    color: #fa4a37;
+    margin-right: 8px;
+  }
+  
+  .location-search {
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .triangle-icon {
+    margin-left: 8px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 9px solid #656565;
+    cursor: pointer;
+  }
+  
+  .search-all {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 250px;
+    padding-left: 15px;
+  }
+  
+  .search-icon {
+    margin-left: 14px;
+    color: #909090;
+  }
+  
+  .dropdown-panel {
+    display: none;
+    position: absolute;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 6px 18px rgba(60,60,60,0.10);
+    z-index: 1;
+  }
+  
+  .make-dropdown-visible {
+    display: block !important;
+  }
+  
+  #options {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 50px 0;
+  }
+  
+  #options > div {
+    width: 270px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+    background: #fff;
+    transition: transform 0.18s;
+    cursor: pointer;
+  }
+  
+  #options > div:hover {
+    transform: translateY(-10px) scale(1.025);
+    box-shadow: 0 6px 24px rgba(255, 74, 55, 0.13);
+  }
+  
+  .opt-footer {
+    padding: 18px 22px;
+    background: #fff;
+  }
+  
+  .opt-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fa4a37;
+  }
+  
+  .opt-desc {
+    color: #222;
+    font-size: 15px;
+    margin-top: 6px;
+  }
+  
